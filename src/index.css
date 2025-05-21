@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-Poppins: "Poppins", sans-serif;
+    --font-Montserrat: "Montserrat", sans-serif;
+    --color-orange: #ff624c;
+    --color-black: #000;
+    --color-white: #FFFFFF;
+    --color-yellow: #FED550;
+    --color-purpel: #1A237B;
+    --color-blue: #00579F;
+    --color-red: #BD0034;
+    --color-black01: #303030;
+    --color-white01: #D9D9D9;
+    --color-purpel01: #283BB2;
+    --color-blue01: #469BDB;
+    --color-white02: #F4F4F4;
+}
+
+/* cutome_selet */
+.custom-select .ant-select-selector {
+    border: none !important;
+}
