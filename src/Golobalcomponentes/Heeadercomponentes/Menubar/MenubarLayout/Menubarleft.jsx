@@ -1,16 +1,17 @@
 import React from 'react'
 import Allctagorimenu from '../Allcatagories/Allctagorimenu'
-import Productsmenu from '../Productsmenu/Productsmenu'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const Menubarleft = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <div className='flex items-center gap-x-5'>
+            <div className='flex items-center gap-x-20'>
                 <Allctagorimenu />
-                <Productsmenu />
-                <Link>Blog</Link>
-                <Link>Contact</Link>
+                <Link to="/Products" className='font-Montserrat font-bold text-base text-white'> {t('Products')}</Link>
+                <Link to="/Blog" className='font-Montserrat font-bold text-base text-white'> {t('Blog')}</Link>
+                <Link to="/Contact" className='font-Montserrat font-bold text-base text-white'>{t('Contact')}</Link>
             </div >
         </>
     )
