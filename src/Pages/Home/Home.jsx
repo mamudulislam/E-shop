@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Banner from './Componentes/Banner';
 import Support from './Componentes/Support/Support';
+import FeaturedProducts from './Componentes/FeaturedProducts/FeaturedProducts';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -15,6 +16,7 @@ const Home = () => {
             <Container>
                 <Banner />
                 <Support />
+                <FeaturedProducts />
             </Container>
         </>
     );

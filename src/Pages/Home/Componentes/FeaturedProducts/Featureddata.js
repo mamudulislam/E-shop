@@ -1,0 +1,48 @@
+import Productimg from "../../../../assets/Productimg/Productimg.webp"
+export const Featureddata =[
+    {
+        id:1,
+        imges:Productimg,
+        pCatagori:"P H O N E",
+        pName:"JPhone 13 High Quality Value Buy Best Cam...",
+        rate:5,
+        totalrating:120,
+        price: 999.00,
+    },
+    {
+        id:2,
+        imges:Productimg,
+        pCatagori:"P H O N E",
+        pName:"JPhone 13 High Quality Value Buy Best Cam...",
+        rate:5,
+        totalrating:120,
+        price: 999.00,
+    },
+    {
+        id:3,
+        imges:Productimg,
+        pCatagori:"P H O N E",
+        pName:"JPhone 13 High Quality Value Buy Best Cam...",
+        rate:5,
+        totalrating:120,
+        price: 999.00,
+    },
+    {
+        id:4,
+        imges:Productimg,
+        pCatagori:"P H O N E",
+        pName:"JPhone 13 High Quality Value Buy Best Cam...",
+        rate:5,
+        totalrating:120,
+        price: 999.00,
+    },
+    {
+        id:5,
+        imges:Productimg,
+        pCatagori:"P H O N E",
+        pName:"JPhone 13 High Quality Value Buy Best Cam...",
+        rate:5,
+        totalrating:120,
+        price: 999.00,
+    },
+]
