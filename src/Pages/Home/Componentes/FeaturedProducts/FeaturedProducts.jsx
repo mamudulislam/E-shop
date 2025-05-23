@@ -77,7 +77,7 @@ const FeaturedProducts = () => {
     return (
         <>
             <Container>
-                <div className='mt-[80px]'>
+                <div className='mt-[80px] mb-[80px]'>
                     <div className='flex items-center justify-between'>
                         <h3 className='font-Poppins text-[36px] font-semibold text-black01'>
                             {t("Featured Products")}

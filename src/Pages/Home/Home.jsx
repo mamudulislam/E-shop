@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet-async';
 import Banner from './Componentes/Banner';
 import Support from './Componentes/Support/Support';
 import FeaturedProducts from './Componentes/FeaturedProducts/FeaturedProducts';
+import Overview from './Componentes/Overview';
+import NewProducts from './Componentes/Newproductes/Newproductes';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -17,6 +19,8 @@ const Home = () => {
                 <Banner />
                 <Support />
                 <FeaturedProducts />
+                <Overview />
+                <NewProducts />
             </Container>
         </>
     );
