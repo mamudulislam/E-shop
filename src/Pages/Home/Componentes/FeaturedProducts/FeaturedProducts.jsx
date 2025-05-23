@@ -3,7 +3,9 @@ import Container from '../../../../Golobalcomponentes/Container'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { CgArrowLongRight } from 'react-icons/cg';
-
+import ProductCard from '../../../../Golobalcomponentes/ProductCard/ProductCard';
+import Productimg from '../../../../assets/Productimg/Productimg.webp'
+import { Featureddata } from './Featureddata';
 const FeaturedProducts = () => {
     const { t } = useTranslation();
     return (
@@ -19,6 +21,20 @@ const FeaturedProducts = () => {
                             <span className='group-hover:translate-x-2 transition-transform duration-400'>  <CgArrowLongRight size={30} /></span>
                         </Link>
                     </div>
+                    <div className='grid grid-cols-5 gap-x-5 '>{
+                        Featureddata?.map((product) => (
+                            <ProductCard key={product.id}
+                                image={product?.imges}
+                                pCatagori={product?.pCatagori}
+                                pName={product?.pName}
+                                rate={product?.rate}
+                                totalrating={product?.totalrating}
+                                price={product?.price}
+                                pdiscout={product?.discout}
+                            />
+                        ))
+                    }</div>
+
                 </div>
             </Container >
         </>
