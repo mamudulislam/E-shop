@@ -15,7 +15,7 @@ const Allctagorimenu = ({ isMenu, icons, className }) => {
                         <IoIosArrowDown size={24} />{" "}
                     </span>}
                 </div>
-            </Dropdown>
+            </Dropdown >
         </div >
     )
 }

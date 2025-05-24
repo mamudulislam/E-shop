@@ -13,6 +13,7 @@ const Newproductes = () => {
     const [initialData, setInitialData] = useState(13);
     const loadData = () => {
         setInitialData((prev) => prev + 5);
+        console.log(initialData)
     };
 
     return (
