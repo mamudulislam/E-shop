@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Container from '../../../../Golobalcomponentes/Container';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,10 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 const Newproductes = () => {
     const { t } = useTranslation();
+    const [initialData, setInitialData] = useState(13);
+    const loadData = () => {
+        setInitialData((prev) => prev + 5);
+    };
 
     return (
         <div>
@@ -21,7 +25,7 @@ const Newproductes = () => {
                         </h3>
                         <div className='flex items-center gap-x-2 justify-end'>
                             <span className='font-Montserrat font-normal text-base'>
-                                {t("Sort By:")}
+                                {t("Sort by")}
                             </span>
                             <div className='w-[150px]'>
                                 <Allctagorimenu
@@ -31,8 +35,9 @@ const Newproductes = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 mt-8">
-                        {Featureddata?.map((product) => (
+                        {Featureddata?.slice(0, initialData)?.map((product) => (
                             <div key={product.id} className="px-2">
                                 <ProductCard
                                     image={product?.imges}
@@ -47,9 +52,17 @@ const Newproductes = () => {
                         ))}
                     </div>
                 </div>
+                <div className="flex justify-center mt-8">
+                    <button
+                        onClick={loadData}
+                        className="px-6 py-2 bg-orange text-white font-semibold rounded hover:bg-orange-dark transition"
+                    >
+                        {t("Load More")}
+                    </button>
+                </div>
             </Container>
         </div>
-    )
-}
+    );
+};
 
 export default Newproductes;
