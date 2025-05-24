@@ -66,7 +66,7 @@ const ProductCard = ({ image, pCatagori, pName, rate, totalrating, price, pdisco
                 </div>
                 <div>
                     <p className='font-Poppins text-2xl font-semibold text-black01 group-hover:text-orange transition-all ease-linear duration-100'>
-                        {gotDiscounty(price, pdiscout)}
+                        ${gotDiscounty(price, pdiscout)}
                     </p>
                 </div>
             </div>
